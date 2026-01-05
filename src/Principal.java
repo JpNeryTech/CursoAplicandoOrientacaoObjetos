@@ -1,18 +1,24 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
-        meuFilme.nome = "O poderoso chefinho";
-        meuFilme.anoDeLancamento = 2017;
-        meuFilme.duracaoEmMinutos =  90;
+        meuFilme.setNome("O poderoso chefinho");
+        meuFilme.setAnoDeLancamento(2017);
+        meuFilme.setDuracaoEmMinutos(90);
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
         meuFilme.avalia(5);
         meuFilme.avalia(10);
-        System.out.println(meuFilme.somaDasAvaliacoes);
-        System.out.println(meuFilme.totalDeAvaliacoes);
+        System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
         System.out.println(meuFilme.mediaAvaliacoes());
 
+        /*
+        Sem os Getters e Setters ficaria assim:
+        meuFilme.somaDasAvaliacoes = 10;
+        meuFilme.totalDeAvaliacoes = 1;
+        */
 
         // EXERCICIOS DESAFIO!!!
 
@@ -60,7 +66,6 @@ public class Principal {
         aluno.idade = 19;
 
         aluno.exibirInformacoes();
-
     }
 
 }
