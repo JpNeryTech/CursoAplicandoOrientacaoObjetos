@@ -1,4 +1,8 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import desafio2.AlunoDesafio2;
+import desafio2.ContaBancaria;
+import desafio2.IdadePessoa;
+import desafio2.Produto;
 
 public class Principal {
     public static void main(String[] args) {
@@ -56,7 +60,7 @@ public class Principal {
 
         meuCarro.exibiFicha();
 
-        System.out.println("Idade do carro é: " +meuCarro.idade() + " anos");
+        System.out.println("Idade do carro é: " + meuCarro.idade() + " anos");
 
         //5
 
@@ -66,7 +70,69 @@ public class Principal {
         aluno.idade = 19;
 
         aluno.exibirInformacoes();
-    }
 
+
+        // EXERCICIOS DESAFIO 2!!!
+
+        System.out.println("EXERCICIOS DESAFIO 2");
+
+        ContaBancaria conta = new ContaBancaria();
+
+        conta.setNumeroConta(456);
+        conta.setSaldo(1000000);
+        conta.titular = "João Nery";
+
+        System.out.println("Número da conta: " + conta.getNumeroConta());
+        System.out.println("Saldo: " + conta.getSaldo());
+        System.out.println("Titular da conta: " + conta.titular);
+
+        conta.setSaldo(1500000);
+        System.out.println("Novo saldo: " + conta.getSaldo());
+
+
+        IdadePessoa novaPessoa1 = new IdadePessoa();
+
+        novaPessoa1.setNome("João Pedro");
+        novaPessoa1.setIdade(19);
+
+        System.out.println(novaPessoa1.getNome() + " tem " + novaPessoa1.getIdade() + " anos.");
+        novaPessoa1.verificarIdade();
+
+        IdadePessoa novaPessoa2 = new IdadePessoa();
+
+        novaPessoa2.setNome("Davi Mesquita");
+        novaPessoa2.setIdade(1);
+
+        System.out.println(novaPessoa2.getNome() + " tem " + novaPessoa2.getIdade() + " anos.");
+        novaPessoa2.verificarIdade();
+
+        Produto produto1 = new Produto();
+
+        produto1.setNome("Leite");
+        produto1.setPreco(4.59);
+
+        System.out.println(String.format(
+                "Você comprou %s! Com muito choro ganhou um desconto de 5%%",produto1.getNome()));
+        produto1.aplicarDesconto();
+
+
+        AlunoDesafio2 aluno1 = new AlunoDesafio2();
+
+        aluno1.setAluno("João Pedro Pereira Nery");
+        aluno1.setNota(10);
+        aluno1.setNota2(8);
+        aluno1.setNota3(9.5);
+
+        System.out.println(String.format(
+                "O aluno %s tirou %.1f na P1, %.1f na P2 e %.1f na P3."
+                ,aluno1.getAluno()
+                ,aluno1.getNota()
+                ,aluno1.getNota2()
+                ,aluno1.getNota3()
+        ));
+        aluno1.calcularMedia();
+
+    }
 }
+
 
