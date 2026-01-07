@@ -1,8 +1,5 @@
 import br.com.alura.screenmatch.modelos.Filme;
-import desafio2.AlunoDesafio2;
-import desafio2.ContaBancaria;
-import desafio2.IdadePessoa;
-import desafio2.Produto;
+import desafio2.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -131,6 +128,14 @@ public class Principal {
                 ,aluno1.getNota3()
         ));
         aluno1.calcularMedia();
+
+        Livro novoLivro = new Livro();
+
+        novoLivro.setAutor("Raphael Montes");
+        novoLivro.setTitulo("Dias Perfeitos");
+
+        System.out.println("Parabéns pela escolha, abaixo você encontra todos os detalhes do livro!");
+        novoLivro.exibirDetalhes();
 
     }
 }
