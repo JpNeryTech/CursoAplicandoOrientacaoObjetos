@@ -1,4 +1,6 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 import desafio2.*;
 
 public class Principal {
@@ -6,7 +8,8 @@ public class Principal {
         Filme meuFilme = new Filme();
         meuFilme.setNome("O poderoso chefinho");
         meuFilme.setAnoDeLancamento(2017);
-        meuFilme.setDuracaoEmMinutos(90);
+        meuFilme.setDuracaoEmMinutos(180);
+        System.out.println("Duração do filme: " +meuFilme.getDuracaoEmMinutos());
 
         meuFilme.exibeFichaTecnica();
         meuFilme.avalia(8);
@@ -136,6 +139,26 @@ public class Principal {
 
         System.out.println("Parabéns pela escolha, abaixo você encontra todos os detalhes do livro!");
         novoLivro.exibirDetalhes();
+
+        Serie lost = new Serie();
+        lost.setNome("Lost");
+        lost.setAnoDeLancamento(2000);
+        lost.exibeFichaTecnica();
+        lost.setTemporadas(10);
+        lost.setEpisodiosPorTemporada(10);
+        lost.setMinutosPorEpisodio(50);
+        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Shazam");
+        outroFilme.setAnoDeLancamento(2020);
+        outroFilme.setDuracaoEmMinutos(200);
+
+        CalculadoraDeTempo calculadoraTempo = new CalculadoraDeTempo();
+        calculadoraTempo.inclui(meuFilme);
+        calculadoraTempo.inclui(outroFilme);
+        calculadoraTempo.inclui(lost);
+        System.out.println(calculadoraTempo.getTempoTotal());
 
     }
 }
