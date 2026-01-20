@@ -9,5 +9,15 @@ public class PrincipalDesafio3 {
          meuCarro.fichaCarro();
          meuCarro.calculaMaiorPreco();
 
+         Animal animal1 = new Cachorro();
+
+         animal1.emitirSom(Intensidade.ALTO);
+
+         Animal animal2 = new Gato();
+         animal2.emitirSom(Intensidade.BAIXO);
+
+         Animal animal3 = new Cachorro();
+         animal3.emitirSom(Intensidade.BAIXO);
+
     }
 }
