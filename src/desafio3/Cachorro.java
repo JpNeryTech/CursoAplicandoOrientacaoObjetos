@@ -7,7 +7,7 @@ public class Cachorro extends Animal{
         if(intensidade == Intensidade.ALTO){
             System.out.println("AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU AU");
         } else{
-            System.out.println("AU AU");
+            System.out.println("au au");
         }
     }
 }

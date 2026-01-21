@@ -7,7 +7,7 @@ public class Gato extends Animal{
         if(intensidade == Intensidade.ALTO) {
             System.out.println("MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU MIAU");
         } else {
-            System.out.println("MIAU MIAU");
+            System.out.println("miau miau");
         }
     }
 }
