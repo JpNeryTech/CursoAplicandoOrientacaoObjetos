@@ -41,5 +41,20 @@ public class PrincipalDesafio3 {
          contaCorrente.cobrarTarifaMensal();
          contaCorrente.consultarSaldo();
 
+         // NUMERO PRIMO
+
+        NumerosPrimos numerosPrimos = new NumerosPrimos();
+
+        ImprimePrimo imprimePrimo = new ImprimePrimo();
+        imprimePrimo.imprimirPrimo(373);
+
+        System.out.println("Numeros primos: " +numerosPrimos.listarPrimos(10));
+
+        GeradorNumeroPrimo geradorNumeroPrimo = new GeradorNumeroPrimo();
+
+        System.out.println("Proximo número primo é: " +geradorNumeroPrimo.gerarPrimo(7));
+
+
+
     }
 }
