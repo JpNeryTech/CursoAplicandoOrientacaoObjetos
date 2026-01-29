@@ -13,5 +13,15 @@ public class PrincipalDesafio4 {
 
         CalculoGeometrico calculoPerimetro = new CalculadoraSalaRetangular();
         System.out.println("A perimetro do retangulo é: " +calculoPerimetro.calcularPerimetro(14.2, 6.20));
+
+        TabuadaMultiplicacao tabuadaMultiplicacao = new TabuadaMultiplicacao();
+        tabuadaMultiplicacao.mostrarTabuada(3);
+
+        ConverterTemperatura converterTemperatura = new ConverterTemperatura();
+        System.out.println(converterTemperatura.FahrenheitParacelsius(77)+ "°C");
+
+        ConverterTemperatura converterTemperatura1 = new ConverterTemperatura();
+        System.out.println(converterTemperatura1.celsiusParaFahrenheit(25) + "°F");
+
     }
 }
