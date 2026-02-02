@@ -23,5 +23,17 @@ public class PrincipalDesafio4 {
         ConverterTemperatura converterTemperatura1 = new ConverterTemperatura();
         System.out.println(converterTemperatura1.celsiusParaFahrenheit(25) + "°F");
 
+        Ebook ebookUm = new Ebook();
+        System.out.println("Preço a pagar: " +ebookUm.calcularPrecoFinal(80));
+        
+        LivroFisico livroFisico = new LivroFisico();
+        System.out.println("Preço a pagar: " +livroFisico.calcularPrecoFinal(80));
+
+        Supermercado supermercado = new Compra("Arroz", 17.99);
+        supermercado.precoProdutoAtacado(6);
+
+        Supermercado supermercado2 = new Compra("Macarrão", 5.90);
+        supermercado.precoProdutoVarejo(3);
+
     }
 }
