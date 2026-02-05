@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch.trabalhandocomlistas;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Principal {
@@ -42,10 +43,9 @@ public class Principal {
         System.out.println("Segundo Produto da lista completo: " +listaProdutos.get(2));
         System.out.println(listaProdutos);
 
-
-
-
-
-
+        ArrayList<ProdutoPerecivel> listaProdudoPerecivel = new ArrayList<>();
+        ProdutoPerecivel produtoPerecivel1 = new ProdutoPerecivel("Arroz", 12.99, 3, LocalDate.of(2026, 2, 26));
+        listaProdudoPerecivel.add(produtoPerecivel1);
+        System.out.println("Lista produto perecivel: " +listaProdudoPerecivel.get(0));
     }
 }
