@@ -26,6 +26,21 @@ public class Principal {
         System.out.println("Primeira pessoa da lista: " +listaPessoas.get(0).getNome());
         System.out.println(listaPessoas);
 
+        System.out.println("DESAFIO 2 --------------------------------------------");
+
+
+        ArrayList<Produto> listaProdutos = new ArrayList<>();
+
+        Produto produto1 = new Produto("Macarrão", 10.89, 2);
+        Produto produto2 = new Produto("Toddy", 12, 1 );
+        Produto produto3 = new Produto("Biscoito Globo", 5.99, 5);
+        listaProdutos.add(produto1);
+        listaProdutos.add(produto2);
+        listaProdutos.add(produto3);
+        System.out.println("Tamanho lista: " +listaProdutos.size());
+        System.out.println("Segundo Produto da lista: " +listaProdutos.get(1).getNome());
+        System.out.println("Segundo Produto da lista completo: " +listaProdutos.get(2));
+        System.out.println(listaProdutos);
 
 
 
