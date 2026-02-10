@@ -19,6 +19,7 @@ public class PrincipalComListas {
         Filme f1 = filmeDoJoao;
 
         ArrayList<Titulo> lista = new ArrayList<>();
+
         lista.add(filmeDoJoao);
         lista.add(meuFilme);
         lista.add(outroFilme);
@@ -30,7 +31,6 @@ public class PrincipalComListas {
             }
 
         }
-
 
     }
 }
