@@ -1,5 +1,7 @@
 package desafio4;
 
+import br.com.alura.screenmatch.principal.PrincipalComListas;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -19,33 +21,41 @@ public class PrincipalDesafio4 {
         System.out.println("Lista de inteiros ordenada: ");
         System.out.println(listaInteiros);
 
-        Titulo titulo1 = new Titulo("O Pequeno Príncipe");
-        Titulo titulo2 = new Titulo("Entendendo Algoritimos");
-        Titulo titulo3 = new Titulo("Código Limpo");
-
         ArrayList<Titulo> listaTitulos = new ArrayList<>();
-        listaTitulos.add(titulo1);
-        listaTitulos.add(titulo2);
-        listaTitulos.add(titulo3);
+        listaTitulos.add(new Titulo("O Pequeno Príncipe"));
+        listaTitulos.add(new Titulo("Entendendo Algoritimos"));
+        listaTitulos.add(new Titulo("Código Limpo"));
         System.out.println("Lista de titulos não ordenada: ");
         System.out.println(listaTitulos);
 
         Collections.sort(listaTitulos);
-        System.out.println("Lista de titulos ordenada: ");
-        System.out.println(listaTitulos);
+        for(Titulo titulo : listaTitulos){
+            System.out.println(titulo.getNome());
+        }
 
-        List<String> listaCarros = new ArrayList<>();
-        listaCarros.add("BMW M3 Competiton");
-        listaCarros.add("Porcshe Gt3 Rs");
-        listaCarros.add("Corvette");
-        System.out.println(listaCarros);
+        List<String> arrayListCarros = new ArrayList<>();
+        arrayListCarros.add("BMW M3 Competiton");
+        arrayListCarros.add("Porcshe Gt3 Rs");
+        arrayListCarros.add("Corvette");
+        System.out.println("Está é uma Array list" +arrayListCarros);
 
-        LinkedList<String> listaTimes = new LinkedList<>();
-        listaTimes.add("Palmeiras");
-        listaTimes.add("Italia");
-        listaTimes.add("Real Madrid");
-        System.out.println(listaTimes);
+        List<String> linkedListTimes = new LinkedList<>();
+        linkedListTimes.add("Palmeiras");
+        linkedListTimes.add("Italia");
+        linkedListTimes.add("Real Madrid");
+        System.out.println("Está é uma Linked List" +linkedListTimes);
 
+        List<String> listaCoresPolimorfolica;
+        listaCoresPolimorfolica = new ArrayList<>();
+        listaCoresPolimorfolica.add("Verde");
+        listaCoresPolimorfolica.add("Branco");
+        listaCoresPolimorfolica.add("Vermelho");
+        System.out.println("ARRAY LIST: " +listaCoresPolimorfolica);
+
+        listaCoresPolimorfolica = new ArrayList<>();
+        listaCoresPolimorfolica.add("Azul");
+        listaCoresPolimorfolica.add("Amarelo");
+        System.out.println("LINKED LIST: " +listaCoresPolimorfolica);
 
     }
 }
