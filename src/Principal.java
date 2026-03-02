@@ -3,7 +3,7 @@ import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
-import desafio2.*;
+import trabalhandocomlistas.desafio2.*;
 
 import java.util.ArrayList;
 
