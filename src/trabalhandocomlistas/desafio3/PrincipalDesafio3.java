@@ -5,7 +5,7 @@ public class PrincipalDesafio3 {
          carro meuCarro = new carro();
 
          meuCarro.definirModelo("BMW M3 Competition");
-         meuCarro.definirPreco(430000,485000,435000 );
+         meuCarro.definirPreco(430000,485000,435000);
          meuCarro.fichaCarro();
          meuCarro.calculaMaiorPreco();
 
